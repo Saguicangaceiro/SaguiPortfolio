@@ -1,0 +1,1 @@
+Portifolio personalizado feito com as aulas da alura, tomei a criatividade de não deixar igual para tentar diferenciar durante o curso e sempre deixando anotações para me lembrar de detalhes simples que eu poderia esquecer.

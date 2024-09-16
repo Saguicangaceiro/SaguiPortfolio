@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+:root{
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #368b04;
+    --cor-hover: #814d12
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* height: 100vh; -- essa função é para usar todo o conteudo da tela, desativamos porque a pagina inteira está ultrapassando */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+.cabecalho{
+    padding: 2% 0% 0% 8%;
+}
+.menu-cabecalho{
+    display: flex;
+    gap: 80px;
+}
+.menu-cabecalho-link{
+   font-family: var(--fonte-secundaria);
+   font-size: 24px;
+   font-weight: 600;
+   color: var(--cor-terciaria);
+   text-decoration: none; 
+}
+.tilte-dest{
+    color: var(--cor-terciaria);
+}
+.apresent{
+    padding: 5% 8%; /* aqui literalmente ajustamos o posicionamento dos itens centrais da pagina*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; /*novamente, aqui estamos criando um espaçamento entre dois conteines, nesse caso o de img e o section */
+}
+.img{
+    width: 50%;
+}
+.apresent-cont{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.apresent-cont-tilte{
+    font-size: 3.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresent-cont-text{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+.apresent-links-subtilte{
+    color: var(--cor-terciaria);
+}
+.apresent-links{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /*aqui estamos deixando os itens centralizados na tela*/
+    gap: 2rem; /*adiciona espaços iguais entre cada quadrado*/
+}
+.apresent-links-tiltes{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresent-links-a{
+    display: flex; /*usando essa função ele vai jogar todos os itens para a direita*/
+    /* background-color: #22D4FD; -- essa linha era utilizada para dar a cor azul ao botões */
+    justify-content: center; /*com isso, colocamos todos os itens no centro*/
+    gap:16px ; /*usamos gap para deixarmos um pequeno espaçamento entre os icones e o nome*/
+    border: 2px solid var(--cor-terciaria); /*aqui definimos uma borda para cada botão, o 2px do solid seria 
+    "a largura da borda" e o solid é o modelo de borda e depois definimos a cor da mesma, caso queira personalizar a mesma, deixando ela tracejada ou alguma
+    outra função só da uma olhada no w3school em css border style que vai ter algumas funções adicionais para borda */
+    width: 35%;
+    text-align: center;
+    border-radius: 30px; /*aqui definimos "o a redondamento da borda" se ela vai ficar mais quadrada ou mais redonda*/
+    font-size: 1.5rem; /*Lembrando que, para reverter para pixel multiplica o valor de rem por 16*/
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+.apresent-links-a:hover{ /*essa tag hover quando aplicada, mudamos a cor do botão assim que colocamos o mouse em cima do mesmo*/
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+.rodape{
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/*tela que vai ser aplicada em celulares ou telas tão pequenas quanto*/
+@media (max-width: 1200px){
+    .cabecalho{
+        pad: 10%;
+    }
+    .apresent{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresent-cont{
+        width: auto;
+    }
+}

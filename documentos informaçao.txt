@@ -1,0 +1,30 @@
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -- a modelagem da pagina com css
+	https://www.alura.com.br/artigos/css-guia-do-flexbox
+techguide.sh - modelo para te ajudar a seguir a carreira e para ter uma noção de o que estudar
+
+
+dicas de projetos para se fazer
+
+	https://youtu.be/y4ltLH9iK8E?t=4
+
+pagina para escolher paletas de cores que trazem armonia https://colorhunt.co/palette/654520825b326cbec781dae3
+
+flexbox guia
+https://www.alura.com.br/artigos/css-guia-do-flexbox
+
+https://www.alura.com.br/conteudo/css-flexbox-layouts-responsivos
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+fontes customizadas
+https://www.alura.com.br/artigos/tailwind-adicionando-fontes-customizadas
+
+estilizando bordas
+https://www.alura.com.br/artigos/css-border-estilizando-bordas-elementos-css
+
+css icones
+
+https://www.w3schools.com/Css/css_icons.asp
+
+lidando com arquivos, verificar e da uma lida
+https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/Dealing_with_files

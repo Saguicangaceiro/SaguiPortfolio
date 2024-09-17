@@ -120,41 +120,6 @@ body {
     font-weight: 400;
 }
 
-/* Estilo para telas pequenas */
-@media (max-width: 1200px) {
-    .cabecalho {
-        padding: 5%;
-    }
-    
-    .menu-cabecalho {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .apresent {
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
-
-    .img, .apresent-cont {
-        width: 100%;
-    }
-
-    .apresent-links-a {
-        width: 80%; /* Ajustado para melhorar a exibição em telas menores */
-        font-size: 1.25rem;
-        padding: 15px 0;
-    }
-
-    .apresent-cont-tilte {
-        font-size: 1.75rem;
-    }
-
-    .apresent-cont-text {
-        font-size: 1.25rem;
-    }
-}
-
 @media (max-width: 768px) {
     .menu-cabecalho {
         gap: 10px;

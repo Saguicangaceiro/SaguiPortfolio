@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #368b04;
+    --cor-hover: #814d12;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 8%;
+}
+
+.menu-cabecalho {
+    display: flex;
+    gap: 80px;
+}
+
+.menu-cabecalho-link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.tilte-dest {
+    color: var(--cor-terciaria);
+}
+
+.apresent {
+    padding: 5% 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.img {
+    width: 50%;
+}
+
+.apresent-cont {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.apresent-cont-tilte {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresent-cont-text {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresent-links-subtilte {
+    color: var(--cor-terciaria);
+}
+
+.apresent-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.apresent-links-tiltes {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresent-links-a {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 35%;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresent-links-a:hover {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+.rodape {
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Estilo para telas pequenas */
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 5%;
+    }
+    
+    .menu-cabecalho {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .apresent {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .img, .apresent-cont {
+        width: 100%;
+    }
+
+    .apresent-links-a {
+        width: 80%; /* Ajustado para melhorar a exibição em telas menores */
+        font-size: 1.25rem;
+        padding: 15px 0;
+    }
+
+    .apresent-cont-tilte {
+        font-size: 1.75rem;
+    }
+
+    .apresent-cont-text {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-cabecalho {
+        gap: 10px;
+    }
+
+    .apresent-links-a {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px 0;
+    }
+
+    .apresent-cont-tilte {
+        font-size: 1.5rem;
+    }
+
+    .apresent-cont-text {
+        font-size: 1rem;
+    }
+}
